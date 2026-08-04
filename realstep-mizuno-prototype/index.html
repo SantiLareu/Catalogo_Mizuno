@@ -1,111 +1,107 @@
 <!doctype html>
 <html lang="es-AR">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Catálogo mayorista Mizuno Pádel 2026 comercializado por Real Step" />
-  <title>Real Step · Mizuno Pádel 2026</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Catálogo mayorista Mizuno Pádel 2026, comercializado por RealStep.">
+  <meta name="theme-color" content="#071a3b">
+  <meta property="og:title" content="RealStep · Mizuno Pádel 2026">
+  <meta property="og:description" content="Catálogo mayorista Mizuno Pádel 2026. Armá tu pedido de curvas y solicitalo a RealStep.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/pages/page-1.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="RealStep · Mizuno Pádel 2026">
+  <meta name="twitter:description" content="Catálogo mayorista Mizuno Pádel 2026.">
+  <meta name="twitter:image" content="assets/pages/page-1.png">
+  <title>RealStep · Mizuno Pádel 2026</title>
+  <link rel="icon" href="assets/Real_Step_logo.jpeg" type="image/jpeg">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
   <header class="topbar">
-<a class="brand" href="#portada" aria-label="Ir a la portada">
-  <img
-    src="assets/Real_Step_logo.jpeg"
-    alt="Real Step"
-    class="brand-logo"
-  >
-
-  <span>
-    <strong>Real Step</strong>
-    <small>Catálogo mayorista</small>
-  </span>
-</a>
-    <nav class="topbar-actions">
-      <button class="ghost-button" id="go-products">Ver productos</button>
-      <button class="cart-button" id="open-cart" aria-label="Abrir pedido">
-        Pedido <span id="cart-count">0</span>
+    <a class="brand" href="#portada" aria-label="RealStep: ir a la portada">
+      <span class="brand-logo-wrap"><img src="assets/Real_Step_logo.jpeg" alt="RealStep" class="brand-logo"></span>
+      <span class="brand-caption">Catálogo mayorista</span>
+    </a>
+    <nav class="topbar-actions" aria-label="Acciones principales">
+      <button class="ghost-button" id="go-products" type="button">Ver productos</button>
+      <button class="cart-button" id="open-cart" type="button" aria-controls="cart-drawer" aria-expanded="false">
+        Pedido <span id="cart-count" aria-label="0 curvas">0</span>
       </button>
     </nav>
   </header>
 
-  <main>
-    <section class="cover" id="portada">
-      <img src="assets/pages/page-1.png" alt="Portada del catálogo Mizuno Pádel 2026" />
-      <div class="realstep-badge">
-        <span>COMERCIALIZADO POR</span>
-        <strong>REAL STEP</strong>
-      </div>
+  <main id="contenido">
+    <section class="cover" id="portada" aria-labelledby="cover-title">
+      <h1 id="cover-title" class="visually-hidden">Catálogo mayorista Mizuno Pádel 2026</h1>
+      <img src="assets/pages/page-1.png" alt="Portada del catálogo Mizuno Pádel 2026">
+      <div class="realstep-badge"><span>Comercializado por</span><strong>RealStep</strong></div>
       <a class="cover-cta" href="#productos">Explorar catálogo</a>
     </section>
 
-    <section class="intro-panel" id="productos">
-      <div>
-        <p class="eyebrow">Mizuno Pádel · Temporada 2026</p>
-        <h1>Elegí el modelo, la curva y la cantidad.</h1>
-      </div>
-      <p>Cada curva contiene 12 pares. El pedido se confirma sin pago online y se prepara para enviarse a Real Step.</p>
+    <section class="intro-panel" id="productos" aria-labelledby="products-title">
+      <div><p class="eyebrow">Mizuno Pádel · Temporada 2026</p><h2 id="products-title">Elegí el modelo, la curva y la cantidad.</h2></div>
+      <ul class="commercial-highlights" aria-label="Condiciones principales">
+        <li>Cada curva contiene 12 pares</li><li>Atención comercial personalizada</li>
+      </ul>
     </section>
-
     <div id="product-list" class="product-list"></div>
   </main>
 
   <aside class="cart-drawer" id="cart-drawer" aria-hidden="true">
     <div class="drawer-backdrop" data-close-cart></div>
-    <section class="drawer-panel" role="dialog" aria-modal="true" aria-labelledby="cart-title">
-      <header class="drawer-header">
-        <div>
-          <p class="eyebrow">Resumen</p>
-          <h2 id="cart-title">Tu pedido</h2>
-        </div>
-        <button class="icon-button" data-close-cart aria-label="Cerrar">×</button>
-      </header>
+    <section class="drawer-panel" role="dialog" aria-modal="true" aria-labelledby="cart-title" tabindex="-1">
+      <header class="drawer-header"><div><p class="eyebrow">Tu selección</p><h2 id="cart-title">Resumen del pedido</h2></div><button class="icon-button" type="button" data-close-cart aria-label="Cerrar resumen">×</button></header>
       <div id="cart-items" class="cart-items"></div>
       <div class="cart-summary">
-        <div><span>Curvas</span><strong id="summary-curves">0</strong></div>
-        <div><span>Pares</span><strong id="summary-pairs">0</strong></div>
-        <div class="grand-total"><span>Total</span><strong id="summary-total">$ 0</strong></div>
-        <button class="primary-button full" id="checkout-button">Continuar con el pedido</button>
+        <div><span>Curvas</span><strong id="summary-curves">0</strong></div><div><span>Pares</span><strong id="summary-pairs">0</strong></div><div class="grand-total"><span>Total</span><strong id="summary-total">$ 0</strong></div>
+        <p class="commercial-note">El envío del pedido no confirma la operación. RealStep se comunicará para validar stock, precios, envío y condiciones comerciales.</p>
+        <div class="cart-actions"><button class="secondary-button full" id="continue-shopping" type="button">Seguir viendo productos</button><button class="danger-button full" id="clear-cart" type="button" hidden>Vaciar pedido</button><button class="primary-button full" id="checkout-button" type="button">Continuar con el pedido</button></div>
       </div>
     </section>
   </aside>
 
   <section class="modal" id="checkout-modal" aria-hidden="true">
     <div class="modal-backdrop" data-close-checkout></div>
-    <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="checkout-title">
-      <header class="drawer-header">
-        <div>
-          <p class="eyebrow">Confirmación</p>
-          <h2 id="checkout-title">Datos del cliente</h2>
-        </div>
-        <button class="icon-button" data-close-checkout aria-label="Cerrar">×</button>
-      </header>
-      <form id="checkout-form">
+    <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="checkout-title" tabindex="-1">
+      <header class="drawer-header"><div><p class="eyebrow">Confirmación</p><h2 id="checkout-title">Datos del cliente</h2></div><button class="icon-button" type="button" data-close-checkout aria-label="Cerrar formulario">×</button></header>
+      <form id="checkout-form" novalidate>
+        <p class="form-intro">Completá tus datos para que RealStep pueda revisar el pedido y contactarte.</p>
         <div class="form-grid">
-          <label>Nombre y apellido*<input name="name" required autocomplete="name" /></label>
-          <label>Comercio*<input name="company" required /></label>
-          <label>Teléfono*<input name="phone" required autocomplete="tel" /></label>
-          <label>Correo electrónico*<input name="email" type="email" required autocomplete="email" /></label>
-          <label>Provincia*<input name="province" required /></label>
-          <label>Localidad*<input name="city" required /></label>
-          <label class="wide">Dirección<input name="address" autocomplete="street-address" /></label>
-          <label class="wide">Observaciones<textarea name="notes" rows="3"></textarea></label>
+          <label>Nombre y apellido*<input name="name" required autocomplete="name" maxlength="80"><span class="field-error" data-error-for="name"></span></label>
+          <label>Comercio*<input name="company" required autocomplete="organization" maxlength="100"><span class="field-error" data-error-for="company"></span></label>
+          <label>Teléfono*<input name="phone" required autocomplete="tel" inputmode="tel" maxlength="40"><span class="field-error" data-error-for="phone"></span></label>
+          <label>Correo electrónico*<input name="email" type="email" required autocomplete="email" maxlength="120"><span class="field-error" data-error-for="email"></span></label>
+          <label>Provincia*<input name="province" required autocomplete="address-level1" maxlength="60"><span class="field-error" data-error-for="province"></span></label>
+          <label>Localidad*<input name="city" required autocomplete="address-level2" maxlength="80"><span class="field-error" data-error-for="city"></span></label>
+          <label class="wide">Dirección<input name="address" autocomplete="street-address" maxlength="160"><span class="field-error" data-error-for="address"></span></label>
+          <label class="wide">Observaciones<textarea name="notes" rows="3" maxlength="600"></textarea><span class="field-error" data-error-for="notes"></span></label>
         </div>
-        <div class="checkout-preview" id="checkout-preview"></div>
-        <p class="form-note">Al confirmar, Real Step recibirá el pedido y enviaremos una copia de confirmación al correo del cliente.</p>
+        <div class="checkout-preview" id="checkout-preview" aria-live="polite"></div>
+        <p class="form-note">Al confirmar, RealStep recibirá el pedido y enviaremos una copia al correo indicado. El pedido queda sujeto a validación comercial.</p>
+        <div class="submit-status" id="submit-status" role="status" aria-live="polite"></div>
         <button class="primary-button full" type="submit">Confirmar y enviar pedido</button>
       </form>
+      <section class="success-panel" id="success-panel" hidden tabindex="-1">
+        <span class="success-icon" aria-hidden="true">✓</span><h2>Pedido enviado correctamente</h2><p>Enviamos una copia al correo indicado. RealStep revisará la disponibilidad y se comunicará para continuar con la operación.</p><button class="primary-button" id="success-close" type="button">Volver al catálogo</button>
+      </section>
     </div>
   </section>
 
-  <div class="toast" id="toast" role="status"></div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
-  <footer>
-    <strong>REAL STEP</strong>
-    <span>Catálogo mayorista · Mizuno Pádel 2026</span>
+  <!-- DATOS CONFIGURABLES: buscá REEMPLAZAR_ para completar los enlaces comerciales. -->
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <section><span class="footer-logo-wrap"><img src="assets/Real_Step_logo.jpeg" alt="RealStep" class="footer-logo"></span><p>Distribución y comercialización mayorista de artículos deportivos.</p><p>Catálogo mayorista Mizuno Pádel 2026.</p></section>
+      <section></section>
+      <section><h2>Contacto comercial</h2><ul class="footer-links"><li><a href="5492235440976" target="_blank" rel="noopener noreferrer">WhatsApp</a></li><li><a href="https://www.instagram.com/realstep.oficial/" target="_blank" rel="noopener noreferrer">Instagram</a></li><li><span>Mar del Plata, Buenos Aires, Argentina</span></li></ul></section>
+    </div>
+    <div class="footer-bottom"><span>© 2026 RealStep. Todos los derechos reservados.</span><span>Catálogo desarrollado y administrado por Santiago Lareu.</span></div>
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-  <script src="app.js"></script>
+  <script type="module" src="js/app.js"></script>
 </body>
 </html>
