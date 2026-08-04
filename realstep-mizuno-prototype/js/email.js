@@ -1,6 +1,6 @@
 import { ARS, PAIRS_PER_CURVE, compositionText, curvePrice, findCurve, findProduct } from './data.js';
 
-export const EMAILJS_CONFIG = Object.freeze({ serviceId:'service_8o99xft', templateId:'template_as1l96o', publicKey:'y0YUw9SkckUUTgg1q', realStepEmail:'martin@marquevich.com' });
+export const EMAILJS_CONFIG = Object.freeze({ serviceId:'service_8o99xft', templateId:'template_as1l96o', publicKey:'y0YUw9SkckUUTgg1q', realStepEmail:'martin@marquevich.com'});
 const REQUEST_DELAY_MS = 1150;
 
 export function escapeHtml(value) {

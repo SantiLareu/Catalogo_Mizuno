@@ -23,6 +23,9 @@ Los módulos ES requieren servir la carpeta por HTTP; abrir `index.html` directa
 cd Catalogo_Mizuno\realstep-mizuno-prototype
 jwebserver -b 127.0.0.1 -p 8000 -d .
 ```
+```
+python -m http.server 5500
+```
 
 Abrí `http://127.0.0.1:8000`. También sirve cualquier servidor estático equivalente.
 
